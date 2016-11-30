@@ -1,0 +1,2 @@
+Conteúdo do arquivo doc.txt
+Nova linha de teste!

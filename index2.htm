@@ -1,0 +1,51 @@
+<html>
+<body>
+	<b>Node JS 6.9</b>
+	<p>Principais comandos:</p>
+ <ul>
+  <li>node -v</li>
+  <li>node arquivoJavascript.js</li>
+  <li>npm -v</li>
+ </ul>
+ Entrar em modo node (node ENTER), ou seja ambiente REPL (Read Eval Print Loop),
+  Sair do modo REPL (control + C)
+ <ul>
+  <li>comandos JS</li>
+  <li>require('modulo_x');</li>
+ </ul>
+ <p>Principais modulos nativos (CommonJS):</p>
+<ul>
+  <li>require('http');</li>
+  <li>require('fs');</li>
+ </ul>
+ <p>Modulo http - cria um servidor web configurado na porta 8081 
+  <a href="http://localhost:8081">localhost:8081</a></p>
+ <pre>var http = require('http');
+http.createServer(function (request, response) {
+ response.end('Hello World');
+}).listen(8081);</pre>
+
+<p>Modulo fs - acesso ao sistema de arquivo do SO (file system)</p>
+ <pre>var a = require('fs');
+console.log(__dirname+'\\doc.txt');
+var texto = a.readFile(__dirname+'/doc.txt', 
+ function(erro, retorno){
+  if(erro)
+   console.log('erro de acesso');
+  else
+   console.log('r:'+retorno);
+ });</pre>
+
+<p>Modulo path - facilidade de trabalhar com diretorios e arquivos</p>
+ <pre>const p = require('path');
+console.log(p.basename(''));
+var texto = a.readFile(__dirname+'/doc.txt', 
+ function(erro, retorno){
+  if(erro)
+   console.log('erro de acesso');
+  else
+   console.log('r:'+retorno);
+ });</pre>
+	<a href="index.htm">HOME</a> | <a href="index3.htm">index2</a> 
+</body>
+</html>
